@@ -6,6 +6,9 @@
 <title>Forma po meri · Nameštaj po meri, Novi Beograd</title>
 <meta name="description" content="Kuhinje, plakari, garderoberi i nameštaj po meri. Merenje, 3D prikaz, izrada i montaža. Radionica na Novom Beogradu, od 2016.">
 <link rel="canonical" href="https://formapomeri.rs/">
+<link rel="alternate" hreflang="sr" href="https://formapomeri.rs/">
+<link rel="alternate" hreflang="en" href="https://formapomeri.rs/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://formapomeri.rs/">
 <meta name="theme-color" content="#1E3A34">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="sr_RS">
@@ -17,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FurnitureStore","name":"Forma po meri","description":"Kuhinje, plakari, garderoberi i nameštaj po meri. Merenje, 3D prikaz, izrada i montaža.","url":"https://formapomeri.rs/","image":"https://formapomeri.rs/images/hero.webp","telephone":"+381645552418","email":"kontakt@formapomeri.rs","foundingDate":"2016","address":{"@type":"PostalAddress","streetAddress":"Bulevar umetnosti 17","addressLocality":"Novi Beograd","postalCode":"11070","addressCountry":"RS"},"areaServed":"Beograd","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"14:00"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Koliko traje izrada?","acceptedAnswer":{"@type":"Answer","text":"Prosečan rok je 4–8 nedelja od potvrde projekta. Tačan rok dobijate u ponudi."}},{"@type":"Question","name":"Da li ću videti nameštaj pre izrade?","acceptedAnswer":{"@type":"Answer","text":"Da. Pre početka proizvodnje dobijate 3D prikaz u vašem prostoru i možete tražiti izmene."}},{"@type":"Question","name":"Šta da pošaljem uz upit?","acceptedAnswer":{"@type":"Answer","text":"Osnovne mere ili skicu, nekoliko fotografija prostora i šta vam je važno. Ako nemate mere, dolazimo na merenje."}},{"@type":"Question","name":"Od čega zavisi cena?","acceptedAnswer":{"@type":"Answer","text":"Od dimenzija, materijala, okova, unutrašnje organizacije i uslova montaže. Svaku stavku objašnjavamo u ponudi."}},{"@type":"Question","name":"Koje materijale koristite?","acceptedAnswer":{"@type":"Answer","text":"Ivericu (Egger, Kronospan), lakirani MDF, furnir, kompakt ploče i mermer, okove Blum i Hettich, staklo i aluminijumske profile."}},{"@type":"Question","name":"Šta pokriva garancija?","acceptedAnswer":{"@type":"Answer","text":"Garancija je 2 godine na izradu i montažu."}},{"@type":"Question","name":"Ko radi montažu?","acceptedAnswer":{"@type":"Answer","text":"Naši montažeri. Posle montaže radimo završnu kontrolu i primopredaju."}},{"@type":"Question","name":"Gde se nalazite?","acceptedAnswer":{"@type":"Answer","text":"Radionica je u Bulevaru umetnosti 17, Novi Beograd. Radimo pon–pet 09–17h, sub 09–14h."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Koliko traje izrada?","acceptedAnswer":{"@type":"Answer","text":"Izrada najčešće traje 4–8 nedelja od potvrde projekta. Tačan rok dobijate uz ponudu."}},{"@type":"Question","name":"Da li ću videti nameštaj pre izrade?","acceptedAnswer":{"@type":"Answer","text":"Da. Pre početka izrade dobijate 3D prikaz, kako biste mogli da vidite raspored, izgled i materijale u svom prostoru."}},{"@type":"Question","name":"Od čega zavisi cena?","acceptedAnswer":{"@type":"Answer","text":"Cena zavisi od potreba koje nameštaj treba da ispuni. Na nju utiču veličina projekta, materijali, složenost izrade, unutrašnja organizacija i uslovi montaže. Preciznu ponudu dobijate kada zajedno definišemo rešenje za vaš prostor."}},{"@type":"Question","name":"Koje materijale koristite?","acceptedAnswer":{"@type":"Answer","text":"Koristimo pažljivo odabrane materijale proverenih proizvođača. Zajedno biramo ono što odgovara izgledu, načinu korišćenja i budžetu vašeg projekta."}},{"@type":"Question","name":"Šta pokriva garancija?","acceptedAnswer":{"@type":"Answer","text":"Garancija traje dve godine i pokriva izradu i montažu nameštaja."}},{"@type":"Question","name":"Ko radi montažu?","acceptedAnswer":{"@type":"Answer","text":"Montažu radi naš tim. Tako imamo kontrolu nad završnim detaljima i proveravamo da je sve postavljeno kako je dogovoreno."}},{"@type":"Question","name":"Da li radite van Beograda?","acceptedAnswer":{"@type":"Answer","text":"Radimo u Beogradu i okolini. Ako niste sigurni da li radimo u vašem mestu, pošaljite nam upit."}},{"@type":"Question","name":"Da li se konsultacija i merenje dodatno plaćaju?","acceptedAnswer":{"@type":"Answer","text":"Konsultacija i merenje se ne naplaćuju."}}]}</script>
 <link rel="preload" as="image" href="images/hero.webp" fetchpriority="high">
 <script src="./support.js"></script>
 </head>
@@ -33,39 +36,43 @@
 </helmet>
 <div style="overflow-x:clip">
 <header>
-<nav aria-label="Glavna navigacija" style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:{{ g_navPadY }} clamp(20px,4.4vw,56px);background:{{ g_navBg }};color:{{ g_navColor }};border-bottom:1px solid {{ g_navBorder }};backdrop-filter:{{ g_navBlur }};-webkit-backdrop-filter:{{ g_navBlur }};transition:background .35s,color .35s,padding .35s,border-color .35s;font-family:'Jost',sans-serif">
-<a href="#top" aria-label="Forma po meri, početna" style="font-size:14px;font-weight:500;letter-spacing:.26em;white-space:nowrap">FORMA PO MERI</a>
-<div style="display:{{ g_navLinks }};gap:36px;font-size:14px;letter-spacing:.03em"><a href="#portfolio">Projekti</a><a href="#usluge">Usluge</a><a href="#zasto">O nama</a></div>
-<div style="display:flex;align-items:center;gap:20px;font-size:13px;letter-spacing:.06em">
-<div style="display:{{ g_navLinks }};gap:6px"><span>SR</span><span style="opacity:.6">/ EN</span></div>
-<a href="#kontakt" style="display:{{ g_navLinks }};border:1px solid {{ g_navBtnBorder }};padding:11px 18px;transition:border-color .35s">Konsultacija</a>
-<button type="button" onClick="{{ g_toggleMenu }}" aria-expanded="{{ g_menuOpen }}" aria-controls="mobilni-meni" style="display:{{ g_navBurger }};font:inherit;font-size:14px;letter-spacing:.06em;background:none;border:1px solid {{ g_navBtnBorder }};color:inherit;padding:10px 16px;cursor:pointer">{{ g_menuLabel }}</button>
+<nav aria-label="{{ t.navAria }}" style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:{{ g_navPadY }} clamp(20px,4.4vw,56px);background:{{ g_navBg }};color:{{ g_navColor }};border-bottom:1px solid {{ g_navBorder }};backdrop-filter:{{ g_navBlur }};-webkit-backdrop-filter:{{ g_navBlur }};transition:background .35s,color .35s,padding .35s,border-color .35s;font-family:'Jost',sans-serif">
+<a href="#top" aria-label="{{ t.logoAria }}" style="display:inline-flex;align-items:center;min-height:44px;font-size:14px;font-weight:500;letter-spacing:.26em;white-space:nowrap">FORMA PO MERI</a>
+<div style="display:{{ g_navLinks }};gap:36px;font-size:14px;letter-spacing:.03em"><a href="#portfolio">{{ t.navProj }}</a><a href="#usluge">{{ t.navUsl }}</a><a href="#zasto">{{ t.navAbout }}</a></div>
+<div style="display:flex;align-items:center;gap:{{ g_navGap }};font-size:13px;letter-spacing:.06em">
+<div role="group" aria-label="{{ t.langAria }}" style="display:flex;align-items:center;font-size:13px;letter-spacing:.08em">
+<button type="button" onClick="{{ g_setSr }}" aria-pressed="{{ g_srOn }}" lang="sr" style="min-width:44px;height:44px;padding:0 6px;font:inherit;background:none;border:0;color:inherit;cursor:pointer;opacity:{{ g_srOp }};font-weight:{{ g_srW }}">SR</button>
+<span aria-hidden="true" style="opacity:.4">/</span>
+<button type="button" onClick="{{ g_setEn }}" aria-pressed="{{ g_enOn }}" lang="en" style="min-width:44px;height:44px;padding:0 6px;font:inherit;background:none;border:0;color:inherit;cursor:pointer;opacity:{{ g_enOp }};font-weight:{{ g_enW }}">EN</button>
+</div>
+<a href="#kontakt" style="display:{{ g_navLinks }};border:1px solid {{ g_navBtnBorder }};padding:11px 18px;transition:border-color .35s">{{ t.navCons }}</a>
+<button type="button" onClick="{{ g_toggleMenu }}" aria-expanded="{{ g_menuOpen }}" aria-controls="mobilni-meni" aria-label="{{ g_menuLabel }}" style="display:{{ g_navBurger }};align-items:center;justify-content:center;width:44px;height:44px;margin-right:-10px;padding:0;background:none;border:0;color:inherit;cursor:pointer"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="{{ g_burgerD }}"></path></svg></button>
 </div>
 </nav>
-<div id="mobilni-meni" style="display:{{ g_menuShow }};position:fixed;top:62px;left:0;right:0;z-index:49;background:#F6F1E8;color:#1E3A34;padding:8px clamp(20px,4.4vw,56px) 28px;border-bottom:1px solid rgba(32,37,35,.12);flex-direction:column;font-family:'Jost',sans-serif">
-<a href="#portfolio" onClick="{{ g_closeMenu }}" style="padding:14px 0;border-bottom:1px solid rgba(32,37,35,.1);font-size:22px;font-weight:300">Projekti</a>
-<a href="#usluge" onClick="{{ g_closeMenu }}" style="padding:14px 0;border-bottom:1px solid rgba(32,37,35,.1);font-size:22px;font-weight:300">Usluge</a>
-<a href="#zasto" onClick="{{ g_closeMenu }}" style="padding:14px 0;border-bottom:1px solid rgba(32,37,35,.1);font-size:22px;font-weight:300">O nama</a>
-<a href="#kontakt" onClick="{{ g_closeMenu }}" style="display:inline-flex;align-items:center;justify-content:center;background:#B78552;color:#202523;padding:19px 30px;font-size:15px;font-weight:500;letter-spacing:.02em;border-radius:2px;margin-top:24px">Zakažite besplatnu konsultaciju</a>
-<a href="tel:+381645552418" style="margin-top:16px;text-align:center;font-size:15px;color:#5B615D">+381 64 555 24 18</a>
+<div id="mobilni-meni" style="display:{{ g_menuShow }};position:fixed;top:{{ g_menuTop }};left:0;right:0;z-index:49;background:#F6F1E8;color:#1E3A34;padding:8px clamp(20px,4.4vw,56px) 28px;border-bottom:1px solid rgba(32,37,35,.12);flex-direction:column;font-family:'Jost',sans-serif">
+<a href="#portfolio" onClick="{{ g_closeMenu }}" style="padding:14px 0;border-bottom:1px solid rgba(32,37,35,.1);font-size:22px;font-weight:300">{{ t.navProj }}</a>
+<a href="#usluge" onClick="{{ g_closeMenu }}" style="padding:14px 0;border-bottom:1px solid rgba(32,37,35,.1);font-size:22px;font-weight:300">{{ t.navUsl }}</a>
+<a href="#zasto" onClick="{{ g_closeMenu }}" style="padding:14px 0;border-bottom:1px solid rgba(32,37,35,.1);font-size:22px;font-weight:300">{{ t.navAbout }}</a>
+<a href="#kontakt" onClick="{{ g_closeMenu }}" style="display:flex;align-items:center;justify-content:center;background:#B78552;color:#202523;padding:19px 30px;font-size:15px;font-weight:500;letter-spacing:.02em;border-radius:2px;margin-top:24px">{{ t.ctaFree }}</a>
+<a href="tel:+381645552418" style="margin-top:8px;padding:12px 0;text-align:center;font-size:15px;color:#5B615D">+381 64 555 24 18</a>
 </div>
 </header>
 <main>
 
 <section id="top" data-screen-label="01 Hero" style="position:relative;height:100svh;min-height:620px;max-height:980px;display:flex;flex-direction:column;justify-content:flex-end;color:#F6F1E8;background:#2A2420;font-family:'Jost',sans-serif">
-<img src="images/hero.webp" alt="Zid po meri sa osvetljenim policama i TV komodom u tamnom furniru" fetchpriority="high" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+<img src="images/hero.webp" alt="{{ t.heroAlt }}" fetchpriority="high" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
 <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,16,14,.55) 0%,rgba(18,16,14,0) 24%,rgba(18,16,14,.1) 45%,rgba(18,16,14,.85) 100%),linear-gradient(90deg,rgba(18,16,14,.35) 0%,rgba(18,16,14,0) 60%)"></div>
 <div style="position:relative;padding:120px clamp(20px,4.4vw,56px) clamp(28px,3.4vw,44px)">
-<h1 style="margin:0;font-weight:300;font-size:clamp(44px,6vw,76px);line-height:1.02;letter-spacing:-.015em;max-width:980px;text-wrap:balance">Pravimo nameštaj<br>za vaše potrebe</h1>
+<h1 style="margin:0;font-weight:300;font-size:clamp(44px,6vw,76px);line-height:1.02;letter-spacing:-.015em;max-width:980px;text-wrap:balance">{{ t.h1a }}<br>{{ t.h1b }}</h1>
 <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:40px">
-<a href="#kontakt" style="display:inline-flex;align-items:center;justify-content:center;background:#B78552;color:#202523;padding:19px 30px;font-size:15px;font-weight:500;letter-spacing:.02em;border-radius:2px" style-hover="background:#C99A6B;color:#202523">Zakažite besplatnu konsultaciju</a>
-<a href="#portfolio" style="display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(246,241,232,.55);color:#F6F1E8;padding:18px 30px;font-size:15px;font-weight:500;letter-spacing:.02em;border-radius:2px" style-hover="background:rgba(246,241,232,.1);color:#F6F1E8">Pogledajte naše radove</a>
+<a href="#kontakt" style="display:inline-flex;flex:{{ g_btnFlex }};align-items:center;justify-content:center;background:#B78552;color:#202523;padding:19px 30px;font-size:15px;font-weight:500;letter-spacing:.02em;border-radius:2px" style-hover="background:#C99A6B;color:#202523">{{ t.ctaFree }}</a>
+<a href="#portfolio" style="display:inline-flex;flex:{{ g_btnFlex }};align-items:center;justify-content:center;border:1px solid rgba(246,241,232,.55);color:#F6F1E8;padding:18px 30px;font-size:15px;font-weight:500;letter-spacing:.02em;border-radius:2px" style-hover="background:rgba(246,241,232,.1);color:#F6F1E8">{{ t.ctaWork }}</a>
 </div>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:14px 24px;margin-top:clamp(40px,5.6vw,72px);border-top:1px solid rgba(246,241,232,.22);padding-top:22px;font-size:14px;color:#D3DAD6">
-<div style="display:flex;align-items:baseline;gap:10px"><span style="color:#F6F1E8;font-size:24px;font-weight:300">2016.</span>osnovani</div>
-<div style="display:flex;align-items:baseline;gap:10px"><span style="color:#F6F1E8;font-size:24px;font-weight:300">600+</span>realizovanih projekata</div>
-<div style="display:flex;align-items:baseline;gap:10px"><span style="color:#F6F1E8;font-size:24px;font-weight:300">4.9 ★</span>Google ocena</div>
-<div style="display:flex;align-items:baseline;gap:10px"><span style="color:#F6F1E8;font-size:24px;font-weight:300">2 god.</span>garancije</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr));gap:14px 24px;margin-top:clamp(40px,5.6vw,72px);border-top:1px solid rgba(246,241,232,.22);padding-top:22px;font-size:14px;color:#D3DAD6">
+<div style="display:flex;align-items:baseline;gap:10px"><span style="color:#F6F1E8;font-size:24px;font-weight:300">2016.</span>{{ t.stFounded }}</div>
+<div style="display:flex;align-items:baseline;gap:10px"><span style="color:#F6F1E8;font-size:24px;font-weight:300">600+</span>{{ t.stProj }}</div>
+<div style="display:flex;align-items:baseline;gap:10px"><span style="color:#F6F1E8;font-size:24px;font-weight:300">4.9 ★</span>{{ t.gRating }}</div>
+<div style="display:flex;align-items:baseline;gap:10px"><span style="color:#F6F1E8;font-size:24px;font-weight:300">{{ t.st2y }}</span>{{ t.stWarr }}</div>
 </div>
 </div>
 </section>
@@ -73,17 +80,18 @@
 <section id="portfolio" data-screen-label="02 Portfolio" style="background:#F6F1E8;color:#202523;padding:clamp(72px,9.4vw,120px) max(clamp(20px,5.6vw,72px),calc((100% - 1296px)/2));font-family:'Jost',sans-serif">
 <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:32px 48px">
 <div style="max-width:640px">
-<h2 style="margin:0;font-weight:300;font-size:clamp(32px,3.6vw,46px);line-height:1.1;color:#1E3A34">Naši radovi</h2>
-<p style="margin:24px 0 0;font-size:clamp(16px,1.4vw,18px);line-height:1.65;color:#5B615D;text-wrap:pretty">Izbor kuhinja, plakara, garderobera i nameštaja za ceo stan koji smo izradili po meri. Svaki projekat prilagođavamo prostoru, načinu korišćenja i materijalima koje klijent odabere.</p>
+<h2 style="margin:0;font-weight:300;font-size:clamp(32px,3.6vw,46px);line-height:1.1;color:#1E3A34">{{ t.pfH }}</h2>
+<p style="margin:24px 0 0;font-size:clamp(16px,1.4vw,18px);line-height:1.65;color:#5B615D;text-wrap:pretty">{{ t.pfP }}</p>
 </div>
 <div style="display:flex;flex-wrap:wrap;gap:12px">
-<a href="#portfolio" style="display:inline-flex;align-items:center;justify-content:center;background:#B78552;color:#202523;padding:19px 30px;font-size:15px;font-weight:500;letter-spacing:.02em;border-radius:2px" style-hover="background:#C99A6B;color:#202523">Pogledajte sve radove</a>
-<a href="#kontakt" style="display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(32,37,35,.35);color:#1E3A34;padding:18px 30px;font-size:15px;font-weight:500;letter-spacing:.02em;border-radius:2px" style-hover="background:rgba(30,58,52,.06);color:#1E3A34">Zakažite konsultaciju</a>
+<a href="#portfolio" style="display:inline-flex;flex:{{ g_btnFlex }};align-items:center;justify-content:center;background:#B78552;color:#202523;padding:19px 30px;font-size:15px;font-weight:500;letter-spacing:.02em;border-radius:2px" style-hover="background:#C99A6B;color:#202523">{{ t.pfAll }}</a>
+<a href="#kontakt" style="display:inline-flex;flex:{{ g_btnFlex }};align-items:center;justify-content:center;border:1px solid rgba(32,37,35,.35);color:#1E3A34;padding:18px 30px;font-size:15px;font-weight:500;letter-spacing:.02em;border-radius:2px" style-hover="background:rgba(30,58,52,.06);color:#1E3A34">{{ t.ctaCons }}</a>
 </div>
 </div>
-<div style="display:grid;grid-template-columns:repeat({{ g_pfN }},minmax(0,1fr));gap:40px 20px;margin-top:clamp(40px,5vw,64px)">
-<sc-for list="{{ s4_list }}" as="p" hint-placeholder-count="3">
 <div>
+<div ref="{{ s4_trackRef }}" onScroll="{{ s4_onScroll }}" style="display:grid;grid-template-columns:{{ g_pfCols }};grid-auto-flow:{{ g_pfFlow }};grid-auto-columns:{{ g_pfAuto }};overflow-x:{{ g_pfOvf }};scroll-snap-type:{{ g_pfSnap }};scrollbar-width:none;-webkit-overflow-scrolling:touch;gap:40px 20px;margin-top:clamp(40px,5vw,64px)">
+<sc-for list="{{ s4_list }}" as="p" hint-placeholder-count="3">
+<div style="scroll-snap-align:start;min-width:0">
 <div style="position:relative;height:{{ g_pfH }};background:#E7DFD1">
 <img src="{{ p.img }}" alt="{{ p.title }}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
 <div style="position:absolute;left:14px;top:14px;right:14px;display:flex;flex-wrap:wrap;gap:8px">
@@ -93,22 +101,35 @@
 </div>
 </div>
 <h3 style="margin:18px 0 0;font-size:21px;font-weight:300;color:#1E3A34">{{ p.title }}</h3>
-<div style="font-size:14px;color:#5B615D;margin-top:6px">Izrada {{ p.weeks }}</div>
+<div style="font-size:14px;color:#5B615D;margin-top:6px">{{ t.pfBuild }} {{ p.weeks }}</div>
 </div>
 </sc-for>
+</div>
+<div role="group" aria-label="{{ t.pfDots }}" style="display:{{ g_pfDots }};justify-content:center;margin-top:8px">
+<sc-for list="{{ s4_dots }}" as="d" hint-placeholder-count="3">
+<button type="button" onClick="{{ d.go }}" aria-label="{{ d.label }}" aria-current="{{ d.cur }}" style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:none;border:0;padding:0;cursor:pointer"><span style="display:block;width:{{ d.w }};height:8px;border-radius:4px;background:{{ d.bg }};transition:width .35s ease,background .35s ease"></span></button>
+</sc-for>
+</div>
 </div>
 </section>
 
 <section data-screen-label="03 Recenzije" style="background:#1E3A34;color:#F6F1E8;padding:clamp(72px,9.4vw,120px) max(clamp(20px,5.6vw,72px),calc((100% - 1296px)/2));font-family:'Jost',sans-serif">
 <div style="max-width:980px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center">
-<h2 style="margin:0;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:#BFC9C4">Recenzije</h2>
+<h2 style="margin:0;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:#BFC9C4">{{ t.rvH }}</h2>
 <div aria-hidden="true" style="margin-top:36px;color:#B78552;letter-spacing:.2em;font-size:18px">★★★★★</div>
-<p style="margin:20px 0 0;font-size:clamp(28px,3.4vw,46px);font-weight:300;line-height:1.25;color:#F6F1E8;text-wrap:balance;min-height:3.75em">{{ s7_cur.q }}</p>
-<div style="margin-top:28px;display:flex;flex-wrap:wrap;justify-content:center;gap:6px 16px;align-items:baseline"><span style="font-size:17px;color:#F6F1E8">{{ s7_cur.who }}</span><span style="font-size:14px;color:#BFC9C4">{{ s7_cur.what }}</span></div>
+<p style="margin:20px 0 0;font-size:{{ g_rvFs }};font-weight:300;line-height:1.25;color:#F6F1E8;text-wrap:balance;min-height:{{ g_rvMin }};opacity:{{ s7_op }};translate:{{ s7_ty }};transition:opacity .45s ease,translate .45s cubic-bezier(.22,.61,.36,1)">{{ s7_cur.q }}</p>
+<div style="margin-top:28px;display:flex;justify-content:center;align-items:center;gap:14px;opacity:{{ s7_op }};transition:opacity .45s ease">
+<div style="display:flex">
+<sc-for list="{{ s7_avatars }}" as="a" hint-placeholder-count="1">
+<img src="{{ a.src }}" alt="" width="44" height="44" loading="lazy" style="width:44px;height:44px;border-radius:50%;object-fit:cover;background:#2A4A43;border:2px solid #1E3A34;margin-left:{{ a.ml }}">
+</sc-for>
+</div>
+<span style="font-size:17px;color:#F6F1E8">{{ s7_cur.who }}</span>
+</div>
 <div style="margin-top:32px">{{ s7_bars }}</div>
 <div style="width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px 24px;margin-top:clamp(48px,5.6vw,72px);padding-top:28px;border-top:1px solid rgba(246,241,232,.18)">
-<div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px"><span style="font-size:36px;font-weight:300;color:#F6F1E8">4.9</span><span aria-hidden="true" style="color:#B78552;letter-spacing:.15em">★★★★★</span><span style="font-size:14px;color:#BFC9C4">Google ocena · 600+ projekata</span></div>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Forma+po+meri+Bulevar+umetnosti+17+Novi+Beograd" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(246,241,232,.55);color:#F6F1E8;padding:18px 30px;font-size:15px;font-weight:500;letter-spacing:.02em;border-radius:2px;gap:12px" style-hover="background:rgba(246,241,232,.1);color:#F6F1E8">Pogledajte sve recenzije<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M11 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-6 M14 4h6v6 M20 4l-9 9"></path></svg></a>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px"><span style="font-size:36px;font-weight:300;color:#F6F1E8">4.9</span><span aria-hidden="true" style="color:#B78552;letter-spacing:.15em">★★★★★</span><span style="font-size:14px;color:#BFC9C4">{{ t.gRating }}</span></div>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Forma+po+meri+Bulevar+umetnosti+17+Novi+Beograd" target="_blank" rel="noopener" style="display:inline-flex;flex:{{ g_btnFlex }};align-items:center;justify-content:center;border:1px solid rgba(246,241,232,.55);color:#F6F1E8;padding:18px 30px;font-size:15px;font-weight:500;letter-spacing:.02em;border-radius:2px;gap:12px" style-hover="background:rgba(246,241,232,.1);color:#F6F1E8">{{ t.rvAll }}<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M11 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-6 M14 4h6v6 M20 4l-9 9"></path></svg></a>
 </div>
 </div>
 </section>
@@ -116,10 +137,10 @@
 <section id="zasto" data-screen-label="04 Zašto Forma po meri" style="background:#F6F1E8;color:#1E3A34;padding:clamp(72px,9.4vw,120px) max(clamp(20px,5.6vw,72px),calc((100% - 1296px)/2));font-family:'Jost',sans-serif">
 <div style="display:grid;grid-template-columns:repeat({{ g_zCols }},minmax(0,1fr));gap:0 16px">
 <div style="grid-column:1 / -1">
-<div style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:#5B615D">Zašto Forma po meri</div>
-<h2 style="margin:24px 0 0;font-weight:300;font-size:clamp(32px,3.6vw,46px);line-height:1.1;letter-spacing:-.01em;max-width:760px;text-wrap:balance">Ne morate da znate šta tačno želite da biste nam se javili</h2>
+<div style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:#5B615D">{{ t.zEy }}</div>
+<h2 style="margin:24px 0 0;font-weight:300;font-size:clamp(32px,3.6vw,46px);line-height:1.1;letter-spacing:-.01em;max-width:760px;text-wrap:balance">{{ t.zH }}</h2>
 </div>
-<p style="grid-column:span 2;margin:24px 0 0;font-size:clamp(16px,1.4vw,18px);line-height:1.65;color:#5B615D;text-wrap:pretty">Više od 600 završenih projekata naučilo nas je šta ljudima najviše znači: jasna ponuda, poštovanje dogovorenog roka i mogućnost da pre izrade vide kako će nameštaj izgledati u njihovom prostoru.<br>Zato zajedno prolazimo kroz ceo plan, izbor materijala i cenu pre nego što počnemo izradu.</p>
+<p style="grid-column:span 2;margin:24px 0 0;font-size:clamp(16px,1.4vw,18px);line-height:1.65;color:#5B615D;text-wrap:pretty">{{ t.zP1 }}<br>{{ t.zP2 }}</p>
 </div>
 <div style="display:grid;grid-template-columns:repeat({{ g_zCols }},minmax(0,1fr));grid-auto-rows:{{ g_zRow }};gap:16px;margin-top:clamp(40px,5vw,64px)">
 <sc-for list="{{ s2_tiles }}" as="p" hint-placeholder-count="6">
@@ -132,17 +153,17 @@
 </div>
 </section>
 
-<section id="usluge" ref="{{ s3_outRef }}" data-screen-label="05 Usluge" style="position:relative;background:#1E3A34;color:#F6F1E8;font-family:'Jost',sans-serif">
-<div style="position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:clamp(28px,4vw,48px)">
+<section id="usluge" ref="{{ s3_outRef }}" data-screen-label="05 Usluge" style="position:relative;min-height:100svh;background:#1E3A34;color:#F6F1E8;font-family:'Jost',sans-serif">
+<div style="position:sticky;top:0;height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:clamp(28px,4vw,48px)">
 <div style="padding:0 max(clamp(20px,5.6vw,72px),calc((100% - 1296px)/2))">
 <div>
-<div style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:#BFC9C4">Usluge</div>
-<h2 style="margin:24px 0 0;font-weight:300;font-size:clamp(32px,3.6vw,46px);line-height:1.1;color:#F6F1E8">Šta izrađujemo?</h2>
+<div style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:#BFC9C4">{{ t.uEy }}</div>
+<h2 style="margin:24px 0 0;font-weight:300;font-size:clamp(32px,3.6vw,46px);line-height:1.1;color:#F6F1E8">{{ t.uH }}</h2>
 </div>
 </div>
-<div ref="{{ s3_trackRef }}" style="display:flex;gap:20px;width:max-content;padding:0 max(clamp(20px,5.6vw,72px),calc((100% - 1296px)/2));will-change:transform">
+<div ref="{{ s3_trackRef }}" style="display:flex;gap:clamp(24px,2.4vw,32px);width:max-content;padding:0 max(clamp(20px,5.6vw,72px),calc((100% - 1296px)/2));will-change:transform">
 <sc-for list="{{ s3_services }}" as="s" hint-placeholder-count="6">
-<div style="flex:none;width:min(clamp(240px,24vw,300px),calc((100vh - 330px) * .714))">
+<div style="flex:none;width:min(clamp(240px,24vw,300px),calc((100svh - 330px) * .714))">
 <img src="{{ s.img }}" alt="{{ s.name }}" loading="lazy" style="display:block;width:100%;aspect-ratio:5/7;object-fit:cover;background:#2A4A43">
 <h3 style="margin:18px 0 0;font-size:19px;font-weight:400;line-height:1.35;color:#F6F1E8">{{ s.name }}</h3>
 </div>
@@ -154,11 +175,10 @@
 <section id="proces" data-screen-label="06 Proces saradnje" style="background:#F6F1E8;color:#202523;padding:clamp(72px,9.4vw,120px) max(clamp(20px,5.6vw,72px),calc((100% - 1296px)/2));font-family:'Jost',sans-serif">
 <div style="display:grid;grid-template-columns:{{ g_prWrap }};gap:clamp(48px,6vw,96px);align-items:start">
 <div style="padding-top:{{ s5_alignTop }}">
-<h2 style="margin:0;font-weight:300;font-size:clamp(32px,3.6vw,46px);line-height:1.1;color:#1E3A34;text-wrap:balance">Kako izgleda saradnja?</h2>
-<p style="margin:24px 0 0;font-size:17px;line-height:1.6;color:#5B615D;max-width:420px">Izrada traje 4–8 nedelja od potvrde projekta.</p>
+<h2 style="margin:0;font-weight:300;font-size:clamp(32px,3.6vw,46px);line-height:1.1;color:#1E3A34;text-wrap:balance">{{ t.prH }}</h2>
+<p style="margin:24px 0 0;font-size:17px;line-height:1.6;color:#5B615D;max-width:420px">{{ t.prP }}</p>
 <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:40px">
-<a href="#kontakt" style="display:inline-flex;align-items:center;justify-content:center;background:#B78552;color:#202523;padding:19px 30px;font-size:15px;font-weight:500;letter-spacing:.02em;border-radius:2px" style-hover="background:#C99A6B;color:#202523">Zakažite besplatnu konsultaciju</a>
-<a href="#portfolio" style="display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(32,37,35,.35);color:#1E3A34;padding:18px 30px;font-size:15px;font-weight:500;letter-spacing:.02em;border-radius:2px" style-hover="background:rgba(30,58,52,.06);color:#1E3A34">Pogledajte naše radove</a>
+<a href="#kontakt" style="display:inline-flex;flex:{{ g_btnFlex }};align-items:center;justify-content:center;background:#B78552;color:#202523;padding:19px 30px;font-size:15px;font-weight:500;letter-spacing:.02em;border-radius:2px" style-hover="background:#C99A6B;color:#202523">{{ t.ctaFree }}</a>
 </div>
 </div>
 <div ref="{{ s5_listRef }}" style="position:relative">
@@ -176,11 +196,11 @@
 </section>
 
 <section data-screen-label="07 Cena" style="background:#FFFFFF;color:#1E3A34;padding:clamp(72px,9.4vw,120px) max(clamp(20px,5.6vw,72px),calc((100% - 1296px)/2));font-family:'Jost',sans-serif">
-<h2 style="margin:0;font-weight:300;font-size:clamp(32px,3.6vw,46px);line-height:1.1;color:#1E3A34;text-wrap:balance">Šta utiče na cenu?</h2>
-<p style="margin:24px 0 0;font-size:17px;line-height:1.6;color:#5B615D;max-width:560px">Cena nije unapred zadata — zavisi od izbora koje pravimo zajedno. Preciznu ponudu dobijate posle merenja, uz 3D prikaz.</p>
-<div style="display:grid;grid-template-columns:repeat({{ g_ceF }},minmax(0,1fr));gap:32px 16px;margin-top:clamp(48px,5.6vw,72px)">
+<h2 style="margin:0;font-weight:300;font-size:clamp(32px,3.6vw,46px);line-height:1.1;color:#1E3A34;text-wrap:balance">{{ t.ceH }}</h2>
+<p style="margin:24px 0 0;font-size:17px;line-height:1.6;color:#5B615D;max-width:560px">{{ t.ceP }}</p>
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:32px 16px;margin-top:clamp(48px,5.6vw,72px)">
 <sc-for list="{{ s6_others }}" as="o" hint-placeholder-count="5">
-<div style="display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center">
+<div style="flex:0 0 {{ g_ceW }};display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center">
 <div style="width:clamp(72px,7vw,92px);height:clamp(72px,7vw,92px);border-radius:50%;background:#B78552;display:flex;align-items:center;justify-content:center"><svg aria-hidden="true" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="{{ o.icon }}"></path></svg></div>
 <h3 style="margin:0;font-size:16px;font-weight:400;line-height:1.35;color:#1E3A34;max-width:180px;text-wrap:balance">{{ o.t }}</h3>
 </div>
@@ -189,17 +209,17 @@
 </section>
 
 <section data-screen-label="08 FAQ" style="background:#1E3A34;color:#F6F1E8;padding:clamp(72px,9.4vw,120px) max(clamp(20px,5.6vw,72px),calc((100% - 1296px)/2));font-family:'Jost',sans-serif">
-<h2 style="margin:0;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:#BFC9C4">Česta pitanja</h2>
+<h2 style="margin:0;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:#BFC9C4">{{ t.fqH }}</h2>
 <div style="display:grid;grid-template-columns:{{ g_faqCols }};gap:72px;margin-top:40px;align-items:start">
 <div style="display:flex;flex-direction:column;gap:6px">
 <sc-for list="{{ s9_faq }}" as="f" hint-placeholder-count="8">
-<button type="button" onClick="{{ f.select }}" aria-expanded="{{ f.open }}" style="display:flex;gap:20px;align-items:baseline;width:100%;font:inherit;text-align:left;background:{{ f.bg }};border:0;border-radius:2px;padding:clamp(14px,1.6vw,20px) clamp(16px,2.2vw,28px);cursor:pointer;color:{{ f.color }};transition:background .25s"><span style="width:28px;height:1px;background:{{ f.dash }};flex:none;transform:translateY(-8px)"></span><span style="display:block"><span style="display:block;font-size:clamp(19px,2.2vw,28px);font-weight:300;line-height:1.25">{{ f.q }}</span><span style="display:{{ f.showA }};font-size:17px;line-height:1.55;color:#D3DAD6;margin-top:12px">{{ f.a }}</span></span></button>
+<button type="button" onClick="{{ f.select }}" aria-expanded="{{ f.open }}" style="display:flex;gap:20px;align-items:baseline;width:100%;font:inherit;text-align:left;background:{{ f.bg }};border:0;border-radius:2px;padding:clamp(14px,1.6vw,20px) clamp(16px,2.2vw,28px);cursor:pointer;color:{{ f.color }};transition:background .25s"><span style="display:{{ g_dashShow }};width:28px;height:1px;background:{{ f.dash }};flex:none;transform:translateY(-8px)"></span><span style="display:block"><span style="display:block;font-size:clamp(19px,2.2vw,28px);font-weight:300;line-height:1.25">{{ f.q }}</span><span style="display:grid;grid-template-rows:{{ f.rows }};opacity:{{ f.aOp }};transition:grid-template-rows .4s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><span style="display:block;overflow:hidden;min-height:0"><span style="display:block;padding-top:12px;font-size:17px;line-height:1.55;color:#D3DAD6">{{ f.a }}</span></span></span></span></button>
 </sc-for>
 </div>
 <div style="display:{{ g_faqPanel }}">
-<div style="font-size:15px;color:#BFC9C4;padding:20px 0 24px;border-bottom:1px solid rgba(246,241,232,.25)">Odgovor</div>
+<div style="font-size:15px;color:#BFC9C4;padding:20px 0 24px;border-bottom:1px solid rgba(246,241,232,.25)">{{ t.fqA }}</div>
 <p style="margin:32px 0 0;font-size:clamp(22px,2.3vw,30px);font-weight:300;line-height:1.45;text-wrap:pretty">{{ s9_cur.a }}</p>
-<a href="#kontakt" style="display:inline-block;margin-top:32px;font-size:15px;color:#F6F1E8;border-bottom:1px solid #B78552;padding-bottom:4px">Imate drugo pitanje? Pišite nam →</a>
+<a href="#kontakt" style="display:inline-block;margin-top:32px;font-size:15px;color:#F6F1E8;border-bottom:1px solid #B78552;padding-bottom:4px">{{ t.fqMore }}</a>
 </div>
 </div>
 </section>
@@ -208,79 +228,96 @@
 <div style="background:#FFFFFF;border:1px solid rgba(32,37,35,.08)">
 <div style="display:grid;grid-template-columns:{{ g_ctCols }}">
 <div style="padding:clamp(28px,4.4vw,56px) clamp(20px,3.75vw,48px);border-right:1px solid {{ g_ctBr }};border-bottom:1px solid {{ g_ctBb }}">
-<div style="font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:500;color:#5B615D">Kontakt</div>
-<h2 style="margin:20px 0 0;font-weight:300;font-size:clamp(32px,3.6vw,46px);line-height:1.1;color:#1E3A34">Javite nam se</h2>
-<p style="margin:24px 0 0;font-size:17px;line-height:1.65;color:#5B615D;text-wrap:pretty">Recite nam nešto o svom prostoru, bilo da je kuhinja, plakar ili kompletan stan, i javićemo vam se sa sledećim koracima.</p>
+<div style="font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:500;color:#5B615D">{{ t.ctEy }}</div>
+<h2 style="margin:20px 0 0;font-weight:300;font-size:clamp(32px,3.6vw,46px);line-height:1.1;color:#1E3A34">{{ t.ctH }}</h2>
+<p style="margin:24px 0 0;font-size:17px;line-height:1.65;color:#5B615D;text-wrap:pretty">{{ t.ctP }}</p>
 <div style="border-top:1px solid rgba(32,37,35,.12);margin-top:40px;padding-top:36px;display:flex;flex-direction:column;gap:28px">
-<a href="tel:+381645552418" style="display:flex;gap:18px;align-items:flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E3A34" stroke-width="1.3" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v3a2 2 0 0 1-2 2A15 15 0 0 1 3 5a2 2 0 0 1 2-2"></path></svg><span><span style="display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:#5B615D">Telefon</span><span style="display:block;font-size:17px;margin-top:6px;color:#202523;line-height:1.45">+381 64 555 24 18</span></span></a>
+<a href="tel:+381645552418" style="display:flex;gap:18px;align-items:flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E3A34" stroke-width="1.3" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v3a2 2 0 0 1-2 2A15 15 0 0 1 3 5a2 2 0 0 1 2-2"></path></svg><span><span style="display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:#5B615D">{{ t.phone }}</span><span style="display:block;font-size:17px;margin-top:6px;color:#202523;line-height:1.45">+381 64 555 24 18</span></span></a>
 <a href="https://wa.me/381645552418" target="_blank" rel="noopener" style="display:flex;gap:18px;align-items:flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E3A34" stroke-width="1.3" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M4 5h16v11H9l-5 4z"></path></svg><span><span style="display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:#5B615D">Viber / WhatsApp</span><span style="display:block;font-size:17px;margin-top:6px;color:#202523;line-height:1.45">+381 64 555 24 18</span></span></a>
 <a href="mailto:kontakt@formapomeri.rs" style="display:flex;gap:18px;align-items:flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E3A34" stroke-width="1.3" stroke-linejoin="round" style="flex:none;margin-top:2px"><rect x="3" y="5" width="18" height="14" rx="1"></rect><path d="m3 6 9 7 9-7"></path></svg><span><span style="display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:#5B615D">E-mail</span><span style="display:block;font-size:17px;margin-top:6px;color:#202523;line-height:1.45">kontakt@formapomeri.rs</span></span></a>
 </div>
 </div>
 <div style="padding:clamp(28px,4.4vw,56px) clamp(20px,3.75vw,48px)">
-<div style="font-size:18px;font-weight:500;color:#202523">Pošaljite poruku</div>
+<div style="font-size:18px;font-weight:500;color:#202523">{{ t.send }}</div>
 <form action="https://formspree.io/f/VAS_FORMSPREE_ID" method="POST">
 <div style="display:grid;grid-template-columns:{{ g_fCols }};gap:24px;margin-top:28px">
-<label style="display:block"><span style="display:block;font-size:15px;font-weight:500;color:#202523;margin-bottom:10px">Ime i prezime <span style="color:#B78552">*</span></span><input name="ime" required="" autocomplete="name" placeholder="Marko Petrović" style="width:100%;box-sizing:border-box;background:#FCFBF8;border:1px solid rgba(32,37,35,.16);padding:16px 18px;font:inherit;font-size:16px;color:#202523;outline:none;border-radius:0"></label>
-<label style="display:block"><span style="display:block;font-size:15px;font-weight:500;color:#202523;margin-bottom:10px">E-mail <span style="color:#B78552">*</span></span><input name="email" type="email" required="" autocomplete="email" placeholder="marko@primer.rs" style="width:100%;box-sizing:border-box;background:#FCFBF8;border:1px solid rgba(32,37,35,.16);padding:16px 18px;font:inherit;font-size:16px;color:#202523;outline:none;border-radius:0"></label>
-<label style="display:block;grid-column:{{ g_fSpan }}"><span style="display:block;font-size:15px;font-weight:500;color:#202523;margin-bottom:10px">Telefon</span><input name="telefon" type="tel" autocomplete="tel" placeholder="+381 64 000 0000" style="width:100%;box-sizing:border-box;background:#FCFBF8;border:1px solid rgba(32,37,35,.16);padding:16px 18px;font:inherit;font-size:16px;color:#202523;outline:none;border-radius:0"></label>
-<label style="display:block;grid-column:{{ g_fSpan }}"><span style="display:block;font-size:15px;font-weight:500;color:#202523;margin-bottom:10px">Poruka <span style="color:#B78552">*</span></span><textarea name="poruka" rows="4" required="" placeholder="Opišite projekat ili postavite pitanje" style="width:100%;box-sizing:border-box;background:#FCFBF8;border:1px solid rgba(32,37,35,.16);padding:16px 18px;font:inherit;font-size:16px;color:#202523;outline:none;border-radius:0;resize:vertical"></textarea></label>
+<label style="display:block"><span style="display:block;font-size:15px;font-weight:500;color:#202523;margin-bottom:10px">{{ t.fName }} <span style="color:#B78552">*</span></span><input name="ime" required="" autocomplete="name" placeholder="Marko Petrović" style="width:100%;box-sizing:border-box;background:#FCFBF8;border:1px solid rgba(32,37,35,.16);padding:16px 18px;font:inherit;font-size:16px;color:#202523;outline:none;border-radius:0"></label>
+<label style="display:block"><span style="display:block;font-size:15px;font-weight:500;color:#202523;margin-bottom:10px">E-mail <span style="color:#B78552">*</span></span><input name="email" type="email" required="" autocomplete="email" placeholder="{{ t.phEmail }}" style="width:100%;box-sizing:border-box;background:#FCFBF8;border:1px solid rgba(32,37,35,.16);padding:16px 18px;font:inherit;font-size:16px;color:#202523;outline:none;border-radius:0"></label>
+<label style="display:block;grid-column:{{ g_fSpan }}"><span style="display:block;font-size:15px;font-weight:500;color:#202523;margin-bottom:10px">{{ t.phone }}</span><input name="telefon" type="tel" autocomplete="tel" placeholder="+381 64 000 0000" style="width:100%;box-sizing:border-box;background:#FCFBF8;border:1px solid rgba(32,37,35,.16);padding:16px 18px;font:inherit;font-size:16px;color:#202523;outline:none;border-radius:0"></label>
+<label style="display:block;grid-column:{{ g_fSpan }}"><span style="display:block;font-size:15px;font-weight:500;color:#202523;margin-bottom:10px">{{ t.fMsg }} <span style="color:#B78552">*</span></span><textarea name="poruka" rows="4" required="" placeholder="{{ t.phMsg }}" style="width:100%;box-sizing:border-box;background:#FCFBF8;border:1px solid rgba(32,37,35,.16);padding:16px 18px;font:inherit;font-size:16px;color:#202523;outline:none;border-radius:0;resize:vertical"></textarea></label>
 </div>
 <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px 24px;margin-top:28px">
-<span style="font-size:14px;color:#5B615D">Slanjem forme prihvatate <a href="#" style="text-decoration:underline">politiku privatnosti</a>.</span>
-<button type="submit" style="font:inherit;background:#B78552;color:#202523;padding:18px 34px;font-size:15px;font-weight:500;letter-spacing:.03em;border:0;border-radius:0;cursor:pointer" style-hover="background:#C99A6B">Pošaljite poruku</button>
+<span style="font-size:14px;color:#5B615D">{{ t.privA }} <a href="#" style="display:inline-block;padding:12px 0;margin:-12px 0;text-decoration:underline">{{ t.privB }}</a>.</span>
+<button type="submit" style="font:inherit;background:#B78552;color:#202523;padding:18px 34px;font-size:15px;font-weight:500;letter-spacing:.03em;border:0;border-radius:0;cursor:pointer" style-hover="background:#C99A6B">{{ t.send }}</button>
 </div>
 </form>
 </div>
 </div>
 <div style="position:relative;height:clamp(240px,25vw,320px);border-top:1px solid rgba(32,37,35,.08)">
-<iframe src="https://www.google.com/maps?q=Bulevar+umetnosti+17,+Novi+Beograd&amp;z=16&amp;output=embed" title="Mapa — Bulevar umetnosti 17, Novi Beograd" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border:0;filter:grayscale(.4) contrast(.95);position:absolute;inset:0;width:100%;height:100%"></iframe>
+<iframe src="https://www.google.com/maps?q=Bulevar+umetnosti+17,+Novi+Beograd&amp;z=16&amp;output=embed" title="{{ t.mapT }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border:0;filter:grayscale(.4) contrast(.95);position:absolute;inset:0;width:100%;height:100%"></iframe>
 </div>
 </div>
 <footer style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;margin-top:56px;padding-top:24px;border-top:1px solid rgba(32,37,35,.14);font-size:13px;color:#5B615D">
 <span style="letter-spacing:.24em;color:#1E3A34;font-weight:500">FORMA PO MERI</span>
-<span>Od 2016. · 600+ projekata · 2 godine garancije</span>
-<span>SR / EN</span>
+<span>{{ t.foot }}</span>
+<div role="group" aria-label="{{ t.langAria }}" style="display:flex;align-items:center;font-size:13px;letter-spacing:.08em;margin:-12px -6px">
+<button type="button" onClick="{{ g_setSr }}" aria-pressed="{{ g_srOn }}" lang="sr" style="min-width:44px;height:44px;padding:0 6px;font:inherit;background:none;border:0;color:inherit;cursor:pointer;opacity:{{ g_srOp }};font-weight:{{ g_srW }}">SR</button>
+<span aria-hidden="true" style="opacity:.4">/</span>
+<button type="button" onClick="{{ g_setEn }}" aria-pressed="{{ g_enOn }}" lang="en" style="min-width:44px;height:44px;padding:0 6px;font:inherit;background:none;border:0;color:inherit;cursor:pointer;opacity:{{ g_enOp }};font-weight:{{ g_enW }}">EN</button>
+</div>
 </footer>
 </section>
 </main>
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script>
+const FPM_T = {"sr":{"langAria":"Jezik","navAria":"Glavna navigacija","logoAria":"Forma po meri, početna","navProj":"Projekti","navUsl":"Usluge","navAbout":"O nama","navCons":"Konsultacija","ctaFree":"Zakažite besplatnu konsultaciju","h1a":"Pravimo nameštaj","h1b":"za vaše potrebe","heroAlt":"Zid po meri sa osvetljenim policama i TV komodom u tamnom furniru","ctaWork":"Pogledajte naše radove","stFounded":"osnovani","stProj":"realizovanih projekata","gRating":"Google ocena","st2y":"2 god.","stWarr":"garancije","pfH":"Naši radovi","pfP":"Izbor kuhinja, plakara, garderobera i nameštaja za ceo stan koji smo izradili po meri. Svaki projekat prilagođavamo prostoru, načinu korišćenja i materijalima koje klijent odabere.","pfAll":"Pogledajte sve radove","ctaCons":"Zakažite konsultaciju","pfBuild":"Izrada","rvH":"Recenzije","rvAll":"Pogledajte sve recenzije","zEy":"Zašto Forma po meri","zH":"Ne morate da znate šta tačno želite da biste nam se javili","zP1":"Više od 600 završenih projekata naučilo nas je šta ljudima najviše znači: jasna ponuda, poštovanje dogovorenog roka i mogućnost da pre izrade vide kako će nameštaj izgledati u njihovom prostoru.","zP2":"Zato zajedno prolazimo kroz ceo plan, izbor materijala i cenu pre nego što počnemo izradu.","uEy":"Usluge","uH":"Šta izrađujemo?","prH":"Kako izgleda saradnja?","prP":"Tu smo da vas vodimo kroz svaki korak do vašeg novog nameštaja. Od prvog do poslednjeg koraka imate jasnu sliku onoga što dobijate.","ceH":"Šta ulazi u cenu nameštaja po meri?","ceP":"U cenu nameštaja ulaze vaše konkretne potrebe i zahtevi koje nameštaj treba da ispuni. Što je projekat veći i složeniji, cena je viša. Zato preciznu ponudu pravimo tek kada zajedno definišemo rešenje za vaš prostor.","fqH":"Česta pitanja","fqA":"Odgovor","fqMore":"Imate drugo pitanje? Pišite nam →","ctEy":"Kontakt","ctH":"Javite nam se","ctP":"Recite nam nešto o svom prostoru, bilo da je kuhinja, plakar ili kompletan stan, i javićemo vam se sa sledećim koracima.","phone":"Telefon","send":"Pošaljite poruku","fName":"Ime i prezime","fMsg":"Poruka","phEmail":"marko@primer.rs","phMsg":"Opišite projekat ili postavite pitanje","privA":"Slanjem forme prihvatate","privB":"politiku privatnosti","mapT":"Mapa — Bulevar umetnosti 17, Novi Beograd","foot":"Od 2016. · 600+ projekata · 2 godine garancije","title":"Forma po meri · Nameštaj po meri, Novi Beograd","desc":"Kuhinje, plakari, garderoberi i nameštaj po meri. Merenje, 3D prikaz, izrada i montaža. Radionica na Novom Beogradu, od 2016.","menuOpen":"Otvori meni","menuClose":"Zatvori meni","review":"Recenzija","pfDots":"Izbor projekta"},"en":{"langAria":"Language","navAria":"Main navigation","logoAria":"Forma po meri, home","navProj":"Projects","navUsl":"Services","navAbout":"About us","navCons":"Consultation","ctaFree":"Book a free consultation","h1a":"We make furniture","h1b":"for your needs","heroAlt":"Custom wall unit with lit shelves and a dark veneer TV sideboard","ctaWork":"See our work","stFounded":"founded","stProj":"completed projects","gRating":"Google rating","st2y":"2 yrs","stWarr":"warranty","pfH":"Our work","pfP":"A selection of kitchens, wardrobes, walk-in closets and full-apartment furniture we have made to measure. Every project is tailored to the space, the way it is used and the materials the client chooses.","pfAll":"See all projects","ctaCons":"Book a consultation","pfBuild":"Build time:","rvH":"Reviews","rvAll":"See all reviews","zEy":"Why Forma po meri","zH":"You don’t need to know exactly what you want to get in touch","zP1":"More than 600 completed projects have taught us what matters most to people: a clear quote, keeping to the agreed deadline and being able to see how the furniture will look in their space before it is made.","zP2":"That is why we go through the whole plan, the choice of materials and the price together before production starts.","uEy":"Services","uH":"What do we make?","prH":"What does working with us look like?","prP":"We guide you through every step to your new furniture. From the first step to the last, you have a clear picture of what you are getting.","ceH":"What goes into the price of custom furniture?","ceP":"The price reflects your specific needs and what the furniture has to do. The larger and more complex the project, the higher the price. That is why we prepare a precise quote only once we have defined the solution for your space together.","fqH":"Frequently asked questions","fqA":"Answer","fqMore":"Have another question? Write to us →","ctEy":"Contact","ctH":"Get in touch","ctP":"Tell us a little about your space, whether it is a kitchen, a wardrobe or a whole apartment, and we will get back to you with the next steps.","phone":"Phone","send":"Send a message","fName":"Full name","fMsg":"Message","phEmail":"marko@example.com","phMsg":"Describe your project or ask a question","privA":"By sending the form you accept the","privB":"privacy policy","mapT":"Map — Bulevar umetnosti 17, New Belgrade","foot":"Since 2016 · 600+ projects · 2-year warranty","title":"Forma po meri · Custom furniture, New Belgrade","desc":"Custom kitchens, wardrobes, walk-in closets and furniture. Measuring, 3D preview, production and installation. Workshop in New Belgrade since 2016.","menuOpen":"Open menu","menuClose":"Close menu","review":"Review","pfDots":"Choose project"}};
+function fpmLang() {
+  try {
+    const q = new URLSearchParams(window.location.search).get('lang');
+    if (q === 'en' || q === 'sr') return q;
+    const s = window.localStorage.getItem('fpm-lang');
+    if (s === 'en' || s === 'sr') return s;
+  } catch (e) {}
+  return 'sr';
+}
 class Sub {
   get state() { return this.host.state[this.key]; }
   get vw() { return this.host.state.vw || 1280; }
+  get li() { return this.host.state.lang === 'en' ? 1 : 0; }
   setState(u) { const k = this.key; this.host.setState(s => ({ [k]: { ...s[k], ...(typeof u === 'function' ? u(s[k]) : u) } })); }
 }
 class S2 extends Sub {
   points = [
-    { t: 'Jasna komunikacija i realni rokovi', img: 'images/zasto-konsultacije.webp' },
-    { t: 'Precizno merenje pre izrade', img: 'images/zasto-merenje.webp' },
-    { t: '3D prikaz pre početka proizvodnje', img: 'images/zasto-3d.webp' },
-    { t: 'Transparentno objašnjenje\nšta utiče na cenu', img: 'images/zasto-cena.webp' },
-    { t: 'Odabir materijala\nuz savetovanje', img: 'images/zasto-materijal.webp' },
-    { t: 'Montaža i završna kontrola', img: 'images/zasto-montaza.webp' }
+    { t: ['Jasna komunikacija i realni rokovi', 'Clear communication and realistic deadlines'], img: 'images/zasto-konsultacije.webp' },
+    { t: ['Precizno merenje pre izrade', 'Precise measuring before production'], img: 'images/zasto-merenje.webp' },
+    { t: ['3D prikaz pre početka proizvodnje', '3D preview before production starts'], img: 'images/zasto-3d.webp' },
+    { t: ['Transparentno objašnjenje\nšta utiče na cenu', 'A transparent explanation\nof what affects the price'], img: 'images/zasto-cena.webp' },
+    { t: ['Odabir materijala\nuz savetovanje', 'Material selection\nwith expert advice'], img: 'images/zasto-materijal.webp' },
+    { t: ['Montaža i završna kontrola', 'Installation and final inspection'], img: 'images/zasto-montaza.webp' }
   ];
   renderVals() {
-    const ws = this.vw < 1024 ? 'normal' : 'pre-line';
-    return { tiles: this.points.map(p => ({ ...p, ws })) };
+    const ws = this.vw < 1024 ? 'normal' : 'pre-line', li = this.li;
+    return { tiles: this.points.map(p => ({ t: p.t[li], img: p.img, ws })) };
   }
 }
 class S3 extends Sub {
   services = [
-    { name: 'Kuhinje po meri', img: 'images/usluge-kuhinja.webp' },
-    { name: 'Plakari i garderoberi', img: 'images/usluge-plakar.webp' },
-    { name: 'Komode, TV police i nameštaj za dnevni boravak', img: 'images/usluge-dnevni-boravak.webp' },
-    { name: 'Kupatilski nameštaj', img: 'images/usluge-kupatilo.webp' },
-    { name: 'Nameštaj za hodnike i male prostore', img: 'images/usluge-hodnik.webp' },
-    { name: 'Kompletno opremanje stana', img: 'images/usluge-opremanje-stana.webp' }
+    { name: ['Kuhinje po meri', 'Custom kitchens'], img: 'images/usluge-kuhinja.webp' },
+    { name: ['Plakari i garderoberi', 'Wardrobes and walk-in closets'], img: 'images/usluge-plakar.webp' },
+    { name: ['Komode, TV police i nameštaj za dnevni boravak', 'Sideboards, TV units and living room furniture'], img: 'images/usluge-dnevni-boravak.webp' },
+    { name: ['Kupatilski nameštaj', 'Bathroom furniture'], img: 'images/usluge-kupatilo.webp' },
+    { name: ['Nameštaj za hodnike i male prostore', 'Furniture for hallways and small spaces'], img: 'images/usluge-hodnik.webp' },
+    { name: ['Kompletno opremanje stana', 'Complete apartment fit-out'], img: 'images/usluge-opremanje-stana.webp' }
   ];
   outRef = React.createRef(); trackRef = React.createRef();
   componentDidMount() {
     this._measure = () => {
       const o = this.outRef.current, t = this.trackRef.current; if (!o || !t) return;
+      const vh = window.innerHeight || document.documentElement.clientHeight;
+      if (!vh) return;
       this.dist = Math.max(0, t.scrollWidth - window.innerWidth);
-      o.style.height = (window.innerHeight + this.dist) + 'px';
+      o.style.height = (vh + this.dist) + 'px';
       this._tick();
     };
     this._tick = () => {
@@ -291,25 +328,36 @@ class S3 extends Sub {
     window.addEventListener('scroll', this._tick, { passive: true });
     window.addEventListener('resize', this._measure);
     window.addEventListener('load', this._measure);
-    this._measure();
+    if (window.ResizeObserver) { this._ro = new ResizeObserver(() => this._measure()); this._ro.observe(document.documentElement); if (this.trackRef.current) this._ro.observe(this.trackRef.current); }
+    this._measure(); requestAnimationFrame(() => this._measure());
   }
-  componentWillUnmount() { window.removeEventListener('scroll', this._tick); window.removeEventListener('resize', this._measure); window.removeEventListener('load', this._measure); }
-  renderVals() { return { outRef: this.outRef, trackRef: this.trackRef, services: this.services }; }
+  componentWillUnmount() { if (this._ro) this._ro.disconnect(); window.removeEventListener('scroll', this._tick); window.removeEventListener('resize', this._measure); window.removeEventListener('load', this._measure); }
+  renderVals() { const li = this.li; return { outRef: this.outRef, trackRef: this.trackRef, services: this.services.map(s => ({ name: s.name[li], img: s.img })) }; }
 }
 class S4 extends Sub {
   projects = [
-    { title: 'Kuhinja u hrastovom furniru', m: ['fur', 'kva'], weeks: '6 nedelja', img: 'images/portfolio-kuhinja-1.webp' },
-    { title: 'Garderober sa staklenim frontom', m: ['mdf', 'sta'], weeks: '5 nedelja', img: 'images/portfolio-garderober-1.webp' },
-    { title: 'TV zid i komoda', m: ['fur'], weeks: '4 nedelje', img: 'images/portfolio-tv-komoda-1.webp' }
+    { title: ['Kuhinja u hrastovom furniru', 'Oak veneer kitchen'], m: ['fur', 'kva'], weeks: ['6 nedelja', '6 weeks'], img: 'images/portfolio-kuhinja-1.webp' },
+    { title: ['Garderober sa staklenim frontom', 'Walk-in closet with glass fronts'], m: ['mdf', 'sta'], weeks: ['5 nedelja', '5 weeks'], img: 'images/portfolio-garderober-1.webp' },
+    { title: ['TV zid i komoda', 'TV wall and sideboard'], m: ['fur'], weeks: ['4 nedelje', '4 weeks'], img: 'images/portfolio-tv-komoda-1.webp' }
   ];
   icons = {
-    fur: ['Furnir', 'M4 4h16v16H4z M8.5 4c2 4.5-2 9 0 16 M13 4c-1.5 5 1.5 9.5 0 16 M17 4c1.2 4-1 9.5 0 16'],
-    mdf: ['Lakirani MDF', 'M4 4h16v16H4z M12 8c2 2.5 3 4 3 5.5a3 3 0 0 1-6 0c0-1.5 1-3 3-5.5z'],
-    kva: ['Mermer', 'M4 4h16v16H4z M4 14c4-1 5-5 9-6s5-2 7-4 M9.5 20c1-3 3.5-4.5 6-7.5'],
-    sta: ['Staklo', 'M5 3h14v18H5z M15 7l-6 6 M15 11.5l-4 4']
+    fur: [['Furnir', 'Veneer'], 'M4 4h16v16H4z M8.5 4c2 4.5-2 9 0 16 M13 4c-1.5 5 1.5 9.5 0 16 M17 4c1.2 4-1 9.5 0 16'],
+    mdf: [['Lakirani MDF', 'Lacquered MDF'], 'M4 4h16v16H4z M12 8c2 2.5 3 4 3 5.5a3 3 0 0 1-6 0c0-1.5 1-3 3-5.5z'],
+    kva: [['Mermer', 'Marble'], 'M4 4h16v16H4z M4 14c4-1 5-5 9-6s5-2 7-4 M9.5 20c1-3 3.5-4.5 6-7.5'],
+    sta: [['Staklo', 'Glass'], 'M5 3h14v18H5z M15 7l-6 6 M15 11.5l-4 4']
   };
+  state = { i: 0 };
+  trackRef = React.createRef();
+  step() { const el = this.trackRef.current, c = el && el.children[0]; return c ? c.offsetWidth + 20 : 1; }
+  onScroll = () => { const el = this.trackRef.current; if (!el) return; const i = Math.max(0, Math.min(this.projects.length - 1, Math.round(el.scrollLeft / this.step()))); if (i !== this.state.i) this.setState({ i }); };
+  go(i) { const el = this.trackRef.current; if (el) el.scrollTo({ left: i * this.step(), behavior: 'smooth' }); }
   renderVals() {
-    return { list: this.projects.map(p => ({ ...p, mats: p.m.map(k => ({ label: this.icons[k][0], d: this.icons[k][1] })) })) };
+    const li = this.li, cur = this.state.i, lbl = li ? 'Project' : 'Projekat';
+    return {
+      trackRef: this.trackRef, onScroll: this.onScroll,
+      list: this.projects.map(p => ({ title: p.title[li], weeks: p.weeks[li], img: p.img, mats: p.m.map(k => ({ label: this.icons[k][0][li], d: this.icons[k][1] })) })),
+      dots: this.projects.map((p, i) => ({ label: lbl + ' ' + (i + 1), cur: i === cur ? 'true' : 'false', w: i === cur ? '24px' : '8px', bg: i === cur ? '#B78552' : 'rgba(30,58,52,.22)', go: () => this.go(i) }))
+    };
   }
 }
 class S5 extends Sub {
@@ -329,17 +377,17 @@ class S5 extends Sub {
     this._onScroll();
   }
   componentWillUnmount() { window.removeEventListener('scroll', this._onScroll); window.removeEventListener('resize', this._onScroll); }
-  row() { return this.vw < 760 ? 132 : 112; }
+  row() { return this.vw < 760 ? 116 : 112; }
   steps = [
-    'Pošaljete upit i osnovne informacije o prostoru.',
-    'Dogovaramo konsultaciju i izlazak na merenje.',
-    'Predlažemo raspored, materijale i izgled.',
-    'Dobijate 3D prikaz i preciznu ponudu.',
-    'Nakon potvrde, počinje proizvodnja.',
-    'Dogovaramo montažu i završnu primopredaju.'
+    ['Pošaljete upit i osnovne informacije o prostoru.', 'You send an inquiry and basic information about your space.'],
+    ['Dogovaramo konsultaciju i merenje prostora.', 'We arrange a consultation and measure the space.'],
+    ['Predlažemo raspored, materijale i dizajn nameštaja.', 'We propose the layout, materials and furniture design.'],
+    ['Dobijate 3D prikaz i preciznu ponudu.', 'You receive a 3D preview and a precise quote.'],
+    ['Nakon potvrde projekta, počinjemo sa izradom.', 'Once the project is confirmed, production begins.'],
+    ['Proveravamo izradu i montiramo nameštaj.', 'We inspect the work and install the furniture.']
   ];
   renderVals() {
-    const { fillPx, act } = this.state, row = this.row();
+    const { fillPx, act } = this.state, row = this.row(), li = this.li;
     return {
       listRef: this.listRef,
       fill: fillPx + 'px',
@@ -347,60 +395,86 @@ class S5 extends Sub {
       lineTop: row / 2 + 'px',
       lineH: 5 * row + 'px',
       alignTop: this.vw < 1024 ? '0px' : Math.round(row / 2 - 20) + 'px',
-      rows: this.steps.map((text, i) => { const on = i <= act; return { text, n: '0' + (i + 1), dot: on ? '#B78552' : 'rgba(32,37,35,.14)', num: on ? '#B78552' : 'rgba(30,58,52,.28)', color: on ? '#202523' : 'rgba(32,37,35,.42)' }; })
+      rows: this.steps.map((s, i) => { const on = i <= act; return { text: s[li], n: '0' + (i + 1), dot: on ? '#B78552' : 'rgba(32,37,35,.14)', num: on ? '#B78552' : 'rgba(30,58,52,.28)', color: on ? '#202523' : 'rgba(32,37,35,.42)' }; })
     };
   }
 }
 class S6 extends Sub {
   others = [
-    { t: 'Dimenzije i obim', icon: 'M3 9h18v6H3z M7 9v3 M11 9v3 M15 9v3 M18.5 9v2' },
-    { t: 'Radna ploča', icon: 'M2 8h20v3H2z M4 11v9 M20 11v9 M8 11v4h8v-4' },
-    { t: 'Okovi i mehanizmi', icon: 'M5 4h5.5v16H5z M13.5 4H19v16h-5.5z M10.5 7.5h3 M10.5 12h3 M10.5 16.5h3' },
-    { t: 'Unutrašnja organizacija', icon: 'M4 3h16v18H4z M4 9h16 M4 15h16 M10 6h4 M10 12h4 M10 18h4' },
-    { t: 'Uslovi montaže', icon: 'M3 21h18 M3 21v-4h4v-4h4V9h4V5h6' }
+    { t: ['Veličina projekta', 'Project size'], icon: 'M3 9h18v6H3z M7 9v3 M11 9v3 M15 9v3 M18.5 9v2' },
+    { t: ['Materijali i obrada', 'Materials and finish'], icon: 'M4 4h16v16H4z M4 12h16 M12 4v16 M7 4.5c1 2.5-1 4.5 0 7.5 M15 12c1.5 2-1 4 3 8' },
+    { t: ['Složenost izrade', 'Build complexity'], icon: 'M20.78 10.04L20.78 13.96L18.36 13.78L17.75 15.24L19.60 16.82L16.82 19.60L15.24 17.75L13.78 18.36L13.96 20.78L10.04 20.78L10.22 18.36L8.76 17.75L7.18 19.60L4.40 16.82L6.25 15.24L5.64 13.78L3.22 13.96L3.22 10.04L5.64 10.22L6.25 8.76L4.40 7.18L7.18 4.40L8.76 6.25L10.22 5.64L10.04 3.22L13.96 3.22L13.78 5.64L15.24 6.25L16.82 4.40L19.60 7.18L17.75 8.76L18.36 10.22z M12 9a3 3 0 1 0 0 6a3 3 0 1 0 0-6z' },
+    { t: ['Unutrašnja organizacija', 'Interior organization'], icon: 'M4 3h16v18H4z M4 9h16 M4 15h16 M10 6h4 M10 12h4 M10 18h4' },
+    { t: ['Uslovi montaže', 'Installation conditions'], icon: 'M5 4h11l3 2.5-3 2.5H5z M10 9h2.5v11.5H10z' }
   ];
-  renderVals() { return { others: this.others }; }
+  renderVals() { const li = this.li; return { others: this.others.map(o => ({ t: o.t[li], icon: o.icon })) }; }
 }
 class S7 extends Sub {
-  state = { c: 0, run: 0 };
+  state = { c: 0, run: 0, out: false };
   reviews = [
-    { q: 'Od merenja do montaže sve je išlo tačno kako su rekli. Kuhinja izgleda isto kao na 3D prikazu.', who: 'Jelena M.', what: 'Kuhinja · Vračar' },
-    { q: 'Dobili smo jasnu ponudu sa objašnjenjem svake stavke. Bez iznenađenja na kraju.', who: 'Marko i Ana', what: 'Kompletan stan · Novi Beograd' },
-    { q: 'Garderober u potkrovlju sa kosim zidovima — iskoristili su svaki centimetar.', who: 'Ivana P.', what: 'Garderober · Zemun' }
+    { q: ['Od merenja do montaže sve je išlo tačno kako su rekli. Kuhinja izgleda isto kao na 3D prikazu.', 'From measuring to installation, everything went exactly as they said. The kitchen looks just like the 3D preview.'], who: ['Jelena M.', 'Jelena M.'], av: ['https://randomuser.me/api/portraits/women/44.jpg'] },
+    { q: ['Dobili smo jasnu ponudu sa objašnjenjem svake stavke. Znali smo šta plaćamo i nije bilo dodatnih troškova.', 'We got a clear quote with every item explained. We knew what we were paying for and there were no extra costs.'], who: ['Marko i Ana', 'Marko and Ana'], av: ['https://randomuser.me/api/portraits/men/32.jpg', 'https://randomuser.me/api/portraits/women/68.jpg'] },
+    { q: ['U potkrovlju sa kosim zidovima napravili su garderober koji koristi svaki centimetar prostora.', 'In an attic with sloped walls, they built a walk-in closet that uses every centimeter of space.'], who: ['Ivana P.', 'Ivana P.'], av: ['https://randomuser.me/api/portraits/women/26.jpg'] }
   ];
-  go(i) { this.setState(s => ({ c: i, run: s.run + 1 })); }
+  go(i) {
+    clearTimeout(this._ft);
+    this.setState({ out: true });
+    this._ft = setTimeout(() => this.setState(s => ({ c: i, run: s.run + 1, out: false })), 450);
+  }
+  componentWillUnmount() { clearTimeout(this._ft); }
   renderVals() {
-    const { c, run } = this.state, R = this.reviews, h = React.createElement;
-    const bars = h('div', { style: { display: 'flex', gap: 10 } }, R.map((r, i) => h('button', { key: i, type: 'button', onClick: () => this.go(i), 'aria-label': 'Recenzija ' + (i + 1), style: { width: 56, padding: '10px 0', background: 'none', border: 0, cursor: 'pointer' } },
+    const { c, run } = this.state, R = this.reviews, h = React.createElement, li = this.li, lbl = FPM_T[li ? 'en' : 'sr'].review;
+    const bars = h('div', { style: { display: 'flex', gap: 10 } }, R.map((r, i) => h('button', { key: i, type: 'button', onClick: () => this.go(i), 'aria-label': lbl + ' ' + (i + 1), style: { width: 56, height: 44, padding: 0, background: 'none', border: 0, cursor: 'pointer' } },
       h('span', { style: { display: 'block', position: 'relative', height: 3, overflow: 'hidden', background: 'rgba(246,241,232,.2)' } },
         h('span', { key: i === c ? 'run' + run : 'idle', onAnimationEnd: i === c ? () => this.go((c + 1) % R.length) : undefined, style: { position: 'absolute', inset: 0, background: '#B78552', transformOrigin: 'left center', transform: i < c ? 'scaleX(1)' : 'scaleX(0)', animation: i === c ? 'fpFill 7s linear forwards' : 'none' } })))));
-    return { cur: R[c], bars };
+    const cur = R[c];
+    const out = this.state.out;
+    return { op: out ? '0' : '1', ty: out ? '0 10px' : '0 0', cur: { q: cur.q[li], who: cur.who[li] }, bars, avatars: cur.av.map((src, i) => ({ src, ml: i ? '-12px' : '0px' })) };
   }
 }
 class S9 extends Sub {
   state = { c: 0 };
   faq = [
-    { q: 'Koliko traje izrada?', a: 'Prosečan rok je 4–8 nedelja od potvrde projekta. Tačan rok dobijate u ponudi.' },
-    { q: 'Da li ću videti nameštaj pre izrade?', a: 'Da. Pre početka proizvodnje dobijate 3D prikaz u vašem prostoru i možete tražiti izmene.' },
-    { q: 'Šta da pošaljem uz upit?', a: 'Osnovne mere ili skicu, nekoliko fotografija prostora i šta vam je važno. Ako nemate mere, dolazimo na merenje.' },
-    { q: 'Od čega zavisi cena?', a: 'Od dimenzija, materijala, okova, unutrašnje organizacije i uslova montaže. Svaku stavku objašnjavamo u ponudi.' },
-    { q: 'Koje materijale koristite?', a: 'Ivericu (Egger, Kronospan), lakirani MDF, furnir, kompakt ploče i mermer, okove Blum i Hettich, staklo i aluminijumske profile.' },
-    { q: 'Šta pokriva garancija?', a: 'Garancija je 2 godine na izradu i montažu.' },
-    { q: 'Ko radi montažu?', a: 'Naši montažeri. Posle montaže radimo završnu kontrolu i primopredaju.' },
-    { q: 'Gde se nalazite?', a: 'Radionica je u Bulevaru umetnosti 17, Novi Beograd. Radimo pon–pet 09–17h, sub 09–14h.' }
+    [['Koliko traje izrada?', 'Izrada najčešće traje 4 - 8 nedelja od potvrde projekta. Tačan rok dobijate uz ponudu.'], ['How long does production take?', 'Production usually takes 4 - 8 weeks from project confirmation. You get the exact deadline with the quote.']],
+    [['Da li ću videti nameštaj pre izrade?', 'Da. Pre početka izrade dobijate 3D prikaz, kako biste mogli da vidite raspored, izgled i materijale u svom prostoru.'], ['Will I see the furniture before it is made?', 'Yes. Before production starts you get a 3D preview, so you can see the layout, look and materials in your own space.']],
+    [['Od čega zavisi cena?', 'Cena zavisi od potreba koje nameštaj treba da ispuni. Na nju utiču veličina projekta, materijali, složenost izrade, unutrašnja organizacija i uslovi montaže. Preciznu ponudu dobijate kada zajedno definišemo rešenje za vaš prostor.'], ['What does the price depend on?', 'The price depends on what the furniture needs to do. It is affected by project size, materials, build complexity, interior organization and installation conditions. You get a precise quote once we define the solution for your space together.']],
+    [['Koje materijale koristite?', 'Koristimo pažljivo odabrane materijale proverenih proizvođača. Zajedno biramo ono što odgovara izgledu, načinu korišćenja i budžetu vašeg projekta.'], ['What materials do you use?', 'We use carefully selected materials from trusted manufacturers. Together we choose what suits the look, use and budget of your project.']],
+    [['Šta pokriva garancija?', 'Garancija traje dve godine i pokriva izradu i montažu nameštaja.'], ['What does the warranty cover?', 'The warranty lasts two years and covers the production and installation of the furniture.']],
+    [['Ko radi montažu?', 'Montažu radi naš tim. Tako imamo kontrolu nad završnim detaljima i proveravamo da je sve postavljeno kako je dogovoreno.'], ['Who does the installation?', 'Our own team. That way we control the finishing details and check that everything is installed as agreed.']],
+    [['Da li radite van Beograda?', 'Radimo u Beogradu i okolini. Ako niste sigurni da li radimo u vašem mestu, pošaljite nam upit.'], ['Do you work outside Belgrade?', 'We work in Belgrade and the surrounding area. If you are not sure whether we cover your town, send us an inquiry.']],
+    [['Da li se konsultacija i merenje dodatno plaćaju?', 'Konsultacija i merenje se ne naplaćuju.'], ['Are the consultation and measuring charged extra?', 'The consultation and measuring are free of charge.']]
   ];
   renderVals() {
-    const c = this.state.c, tab = this.vw < 1024;
+    const c = this.state.c, tab = this.vw < 1024, li = this.li;
     return {
-      faq: this.faq.map((f, i) => ({ ...f, open: i === c ? 'true' : 'false', color: i === c ? '#F6F1E8' : '#BFC9C4', bg: i === c ? '#2A4A43' : 'transparent', dash: i === c ? '#B78552' : 'transparent', showA: tab && i === c ? 'block' : 'none', select: () => this.setState({ c: i }) })),
-      cur: this.faq[c]
+      faq: this.faq.map((p, i) => ({ q: p[li][0], a: p[li][1], open: i === c ? 'true' : 'false', color: i === c ? '#F6F1E8' : '#BFC9C4', bg: i === c ? '#2A4A43' : 'transparent', dash: i === c ? '#B78552' : 'transparent', rows: tab && i === c ? '1fr' : '0fr', aOp: tab && i === c ? '1' : '0', select: () => this.setState({ c: i }) })),
+      cur: { a: this.faq[c][li][1] }
     };
   }
 }
 class Component extends DCLogic {
   subs = [['s2', S2], ['s3', S3], ['s4', S4], ['s5', S5], ['s6', S6], ['s7', S7], ['s9', S9]].map(([key, C]) => { const o = new C(); o.host = this; o.key = key; o._init = Object.prototype.hasOwnProperty.call(o, 'state') ? o.state : {}; delete o.state; return o; });
-  state = { ...Object.fromEntries(this.subs.map(o => [o.key, o._init])), vw: typeof window !== 'undefined' ? window.innerWidth : 1280, scrolled: false, menu: false };
+  state = { ...Object.fromEntries(this.subs.map(o => [o.key, o._init])), vw: typeof window !== 'undefined' ? window.innerWidth : 1280, scrolled: false, menu: false, lang: typeof window !== 'undefined' ? fpmLang() : 'sr' };
+  applyLang(l) {
+    const t = FPM_T[l];
+    document.documentElement.lang = l;
+    document.title = t.title;
+    const d = document.querySelector('meta[name="description"]'); if (d) d.setAttribute('content', t.desc);
+  }
+  setLang(l) {
+    if (l === this.state.lang) return;
+    this.setState({ lang: l });
+    this.applyLang(l);
+    try {
+      window.localStorage.setItem('fpm-lang', l);
+      const u = new URL(window.location.href);
+      if (l === 'en') u.searchParams.set('lang', 'en'); else u.searchParams.delete('lang');
+      window.history.replaceState(null, '', u.pathname + u.search + u.hash);
+    } catch (e) {}
+    setTimeout(() => window.dispatchEvent(new Event('resize')), 50);
+  }
   componentDidMount() {
+    this.applyLang(this.state.lang);
     this.subs.forEach(o => o.componentDidMount && o.componentDidMount());
     this._reveal();
     this._onResize = () => { const vw = window.innerWidth; if (vw !== this.state.vw) this.setState({ vw, menu: vw < 1024 ? this.state.menu : false }); };
@@ -441,29 +515,47 @@ class Component extends DCLogic {
   renderVals() {
     const out = {};
     this.subs.forEach(o => { const v = o.renderVals(); for (const k in v) out[o.key + '_' + k] = v[k]; });
-    const { vw, menu } = this.state, mob = vw < 760, tab = vw < 1024, light = this.state.scrolled || menu;
+    const { vw, menu, lang } = this.state, mob = vw < 760, tab = vw < 1024, light = this.state.scrolled || menu, t = FPM_T[lang], en = lang === 'en';
     Object.assign(out, {
+      t,
+      g_setSr: () => this.setLang('sr'),
+      g_setEn: () => this.setLang('en'),
+      g_srOn: en ? 'false' : 'true', g_enOn: en ? 'true' : 'false',
+      g_srOp: en ? '.55' : '1', g_enOp: en ? '1' : '.55',
+      g_srW: en ? '400' : '500', g_enW: en ? '500' : '400',
       g_navBg: light ? 'rgba(246,241,232,.94)' : 'rgba(246,241,232,0)',
       g_navColor: light ? '#202523' : '#F6F1E8',
       g_navBorder: light ? 'rgba(32,37,35,.1)' : 'rgba(32,37,35,0)',
       g_navBtnBorder: light ? 'rgba(32,37,35,.3)' : 'rgba(246,241,232,.45)',
-      g_navPadY: light ? '14px' : '26px',
+      g_navPadY: tab ? (light ? '10px' : '14px') : (light ? '14px' : '26px'),
       g_navBlur: light ? 'blur(14px)' : 'none',
+      g_navGap: tab ? '4px' : '20px',
       g_navLinks: tab ? 'none' : 'flex',
       g_navBurger: tab ? 'inline-flex' : 'none',
       g_menuShow: tab && menu ? 'flex' : 'none',
+      g_menuTop: '65px',
       g_menuOpen: menu ? 'true' : 'false',
-      g_menuLabel: menu ? 'Zatvori' : 'Meni',
+      g_menuLabel: menu ? t.menuClose : t.menuOpen,
+      g_burgerD: menu ? 'M6 6l12 12 M18 6L6 18' : 'M4 7h16 M4 12h16 M4 17h16',
       g_toggleMenu: () => this.setState(s => ({ menu: !s.menu })),
       g_closeMenu: () => this.setState({ menu: false }),
+      g_btnFlex: mob ? '1 1 100%' : '0 0 auto',
+      g_rvFs: mob ? '24px' : 'clamp(28px,3.4vw,46px)',
+      g_rvMin: mob ? '6.25em' : '3.75em',
       g_zCols: mob ? 2 : 3,
       g_zRow: mob ? '190px' : 'clamp(200px,17vw,230px)',
-      g_pfN: mob ? 1 : 3,
-      g_pfH: mob ? '300px' : tab ? '300px' : 'clamp(340px,32vw,440px)',
+      g_pfCols: mob ? 'none' : 'repeat(3,minmax(0,1fr))',
+      g_pfFlow: mob ? 'column' : 'row',
+      g_pfAuto: mob ? '100%' : 'auto',
+      g_pfOvf: mob ? 'auto' : 'visible',
+      g_pfSnap: mob ? 'x mandatory' : 'none',
+      g_pfDots: mob ? 'flex' : 'none',
+      g_pfH: mob ? '280px' : tab ? '300px' : 'clamp(340px,32vw,440px)',
       g_prWrap: tab ? 'minmax(0,1fr)' : '5fr 7fr',
-      g_prCols: mob ? '15px 44px minmax(0,1fr)' : '15px 64px minmax(0,1fr)',
-      g_prGap: mob ? '16px' : '28px',
-      g_ceF: mob ? 2 : tab ? 3 : 5,
+      g_prCols: mob ? '15px 40px minmax(0,1fr)' : '15px 64px minmax(0,1fr)',
+      g_prGap: mob ? '14px' : '28px',
+      g_ceW: mob ? 'calc((100% - 16px) / 2)' : tab ? 'calc((100% - 32px) / 3)' : 'calc((100% - 64px) / 5)',
+      g_dashShow: mob ? 'none' : 'block',
       g_faqCols: tab ? 'minmax(0,1fr)' : '7fr 5fr',
       g_faqPanel: tab ? 'none' : 'block',
       g_ctCols: tab ? 'minmax(0,1fr)' : '5fr 7fr',
