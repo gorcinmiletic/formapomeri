@@ -153,17 +153,17 @@
 </div>
 </section>
 
-<section id="usluge" ref="{{ s3_outRef }}" data-screen-label="05 Usluge" style="position:relative;min-height:100svh;background:#1E3A34;color:#F6F1E8;font-family:'Jost',sans-serif">
-<div style="position:sticky;top:0;height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:clamp(28px,4vw,48px)">
+<section id="usluge" ref="{{ s3_outRef }}" data-screen-label="05 Usluge" style="position:relative;min-height:{{ g_usMin }};padding:{{ g_usPad }};background:#1E3A34;color:#F6F1E8;font-family:'Jost',sans-serif">
+<div style="position:{{ g_usPos }};top:0;height:{{ g_usH }};overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:clamp(28px,4vw,48px)">
 <div style="padding:0 max(clamp(20px,5.6vw,72px),calc((100% - 1296px)/2))">
 <div>
 <div style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:#BFC9C4">{{ t.uEy }}</div>
 <h2 style="margin:24px 0 0;font-weight:300;font-size:clamp(32px,3.6vw,46px);line-height:1.1;color:#F6F1E8">{{ t.uH }}</h2>
 </div>
 </div>
-<div ref="{{ s3_trackRef }}" style="display:flex;gap:clamp(24px,2.4vw,32px);width:max-content;padding:0 max(clamp(20px,5.6vw,72px),calc((100% - 1296px)/2));will-change:transform">
+<div ref="{{ s3_trackRef }}" style="display:flex;gap:clamp(24px,2.4vw,32px);width:{{ g_usW }};overflow-x:{{ g_usOvf }};scroll-snap-type:{{ g_usSnap }};scroll-padding-left:max(clamp(20px,5.6vw,72px),calc((100% - 1296px)/2));scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:0 max(clamp(20px,5.6vw,72px),calc((100% - 1296px)/2));will-change:{{ g_usWill }}">
 <sc-for list="{{ s3_services }}" as="s" hint-placeholder-count="6">
-<div style="flex:none;width:min(clamp(240px,24vw,300px),calc((100svh - 330px) * .714))">
+<div style="flex:none;scroll-snap-align:start;width:{{ g_usCard }}">
 <img src="{{ s.img }}" alt="{{ s.name }}" loading="lazy" style="display:block;width:100%;aspect-ratio:5/7;object-fit:cover;background:#2A4A43">
 <h3 style="margin:18px 0 0;font-size:19px;font-weight:400;line-height:1.35;color:#F6F1E8">{{ s.name }}</h3>
 </div>
@@ -211,9 +211,10 @@
 <section data-screen-label="08 FAQ" style="background:#1E3A34;color:#F6F1E8;padding:clamp(72px,9.4vw,120px) max(clamp(20px,5.6vw,72px),calc((100% - 1296px)/2));font-family:'Jost',sans-serif">
 <h2 style="margin:0;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:#BFC9C4">{{ t.fqH }}</h2>
 <div style="display:grid;grid-template-columns:{{ g_faqCols }};gap:72px;margin-top:40px;align-items:start">
-<div style="display:flex;flex-direction:column;gap:6px">
+<div ref="{{ s9_listRef }}" style="position:relative;display:flex;flex-direction:column;gap:6px">
+<span aria-hidden="true" style="display:{{ s9_hlShow }};position:absolute;left:0;right:0;top:0;height:{{ s9_hlH }};transform:translateY({{ s9_hlY }});background:#2A4A43;border-radius:2px;transition:transform .45s cubic-bezier(.22,.61,.36,1),height .45s cubic-bezier(.22,.61,.36,1);pointer-events:none"></span>
 <sc-for list="{{ s9_faq }}" as="f" hint-placeholder-count="8">
-<button type="button" onClick="{{ f.select }}" aria-expanded="{{ f.open }}" style="display:flex;gap:20px;align-items:baseline;width:100%;font:inherit;text-align:left;background:{{ f.bg }};border:0;border-radius:2px;padding:clamp(14px,1.6vw,20px) clamp(16px,2.2vw,28px);cursor:pointer;color:{{ f.color }};transition:background .25s"><span style="display:{{ g_dashShow }};width:28px;height:1px;background:{{ f.dash }};flex:none;transform:translateY(-8px)"></span><span style="display:block"><span style="display:block;font-size:clamp(19px,2.2vw,28px);font-weight:300;line-height:1.25">{{ f.q }}</span><span style="display:grid;grid-template-rows:{{ f.rows }};opacity:{{ f.aOp }};transition:grid-template-rows .4s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><span style="display:block;overflow:hidden;min-height:0"><span style="display:block;padding-top:12px;font-size:17px;line-height:1.55;color:#D3DAD6">{{ f.a }}</span></span></span></span></button>
+<button type="button" onClick="{{ f.select }}" aria-expanded="{{ f.open }}" style="position:relative;display:flex;gap:20px;align-items:baseline;width:100%;font:inherit;text-align:left;background:{{ f.bg }};border:0;border-radius:2px;padding:clamp(14px,1.6vw,20px) clamp(16px,2.2vw,28px);cursor:pointer;color:{{ f.color }};transition:background .25s"><span style="display:{{ g_dashShow }};width:28px;height:1px;background:{{ f.dash }};flex:none;transform:translateY(-8px)"></span><span style="display:block"><span style="display:block;font-size:clamp(19px,2.2vw,28px);font-weight:300;line-height:1.25">{{ f.q }}</span><span style="display:grid;grid-template-rows:{{ f.rows }};opacity:{{ f.aOp }};transition:grid-template-rows .4s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><span style="display:block;overflow:hidden;min-height:0"><span style="display:block;padding-top:12px;font-size:17px;line-height:1.55;color:#D3DAD6">{{ f.a }}</span></span></span></span></button>
 </sc-for>
 </div>
 <div style="display:{{ g_faqPanel }}">
@@ -285,7 +286,7 @@ class Sub {
   get state() { return this.host.state[this.key]; }
   get vw() { return this.host.state.vw || 1280; }
   get li() { return this.host.state.lang === 'en' ? 1 : 0; }
-  setState(u) { const k = this.key; this.host.setState(s => ({ [k]: { ...s[k], ...(typeof u === 'function' ? u(s[k]) : u) } })); }
+  setState(u, cb) { const k = this.key; this.host.setState(s => ({ [k]: { ...s[k], ...(typeof u === 'function' ? u(s[k]) : u) } }), cb); }
 }
 class S2 extends Sub {
   points = [
@@ -314,6 +315,7 @@ class S3 extends Sub {
   componentDidMount() {
     this._measure = () => {
       const o = this.outRef.current, t = this.trackRef.current; if (!o || !t) return;
+      if (window.innerWidth < 760) { o.style.height = ''; t.style.transform = ''; this.dist = 0; return; }
       const vh = window.innerHeight || document.documentElement.clientHeight;
       if (!vh) return;
       this.dist = Math.max(0, t.scrollWidth - window.innerWidth);
@@ -322,7 +324,8 @@ class S3 extends Sub {
     };
     this._tick = () => {
       const o = this.outRef.current, t = this.trackRef.current; if (!o || !t) return;
-      const x = Math.min(this.dist || 0, Math.max(0, -o.getBoundingClientRect().top));
+      if (!this.dist) return;
+      const x = Math.min(this.dist, Math.max(0, -o.getBoundingClientRect().top));
       t.style.transform = 'translate3d(' + (-x) + 'px,0,0)';
     };
     window.addEventListener('scroll', this._tick, { passive: true });
@@ -433,7 +436,16 @@ class S7 extends Sub {
   }
 }
 class S9 extends Sub {
-  state = { c: 0 };
+  state = { c: 0, y: 0, h: 0 };
+  listRef = React.createRef();
+  measure = () => {
+    const l = this.listRef.current; if (!l) return;
+    const b = l.querySelectorAll('button')[this.state.c]; if (!b) return;
+    const y = b.offsetTop, h = b.offsetHeight;
+    if (y !== this.state.y || h !== this.state.h) this.setState({ y, h });
+  };
+  componentDidMount() { window.addEventListener('resize', this.measure); if (window.ResizeObserver && this.listRef.current) { this._ro = new ResizeObserver(this.measure); this._ro.observe(this.listRef.current); } this.measure(); }
+  componentWillUnmount() { window.removeEventListener('resize', this.measure); if (this._ro) this._ro.disconnect(); }
   faq = [
     [['Koliko traje izrada?', 'Izrada najčešće traje 4 - 8 nedelja od potvrde projekta. Tačan rok dobijate uz ponudu.'], ['How long does production take?', 'Production usually takes 4 - 8 weeks from project confirmation. You get the exact deadline with the quote.']],
     [['Da li ću videti nameštaj pre izrade?', 'Da. Pre početka izrade dobijate 3D prikaz, kako biste mogli da vidite raspored, izgled i materijale u svom prostoru.'], ['Will I see the furniture before it is made?', 'Yes. Before production starts you get a 3D preview, so you can see the layout, look and materials in your own space.']],
@@ -447,7 +459,8 @@ class S9 extends Sub {
   renderVals() {
     const c = this.state.c, tab = this.vw < 1024, li = this.li;
     return {
-      faq: this.faq.map((p, i) => ({ q: p[li][0], a: p[li][1], open: i === c ? 'true' : 'false', color: i === c ? '#F6F1E8' : '#BFC9C4', bg: i === c ? '#2A4A43' : 'transparent', dash: i === c ? '#B78552' : 'transparent', rows: tab && i === c ? '1fr' : '0fr', aOp: tab && i === c ? '1' : '0', select: () => this.setState({ c: i }) })),
+      faq: this.faq.map((p, i) => ({ q: p[li][0], a: p[li][1], open: i === c ? 'true' : 'false', color: i === c ? '#F6F1E8' : '#BFC9C4', bg: tab && i === c ? '#2A4A43' : 'transparent', dash: i === c ? '#B78552' : 'transparent', rows: tab && i === c ? '1fr' : '0fr', aOp: tab && i === c ? '1' : '0', select: () => this.setState({ c: i }, () => requestAnimationFrame(this.measure)) })),
+      listRef: this.listRef, hlShow: tab ? 'none' : 'block', hlY: this.state.y + 'px', hlH: this.state.h + 'px',
       cur: { a: this.faq[c][li][1] }
     };
   }
@@ -539,6 +552,15 @@ class Component extends DCLogic {
       g_burgerD: menu ? 'M6 6l12 12 M18 6L6 18' : 'M4 7h16 M4 12h16 M4 17h16',
       g_toggleMenu: () => this.setState(s => ({ menu: !s.menu })),
       g_closeMenu: () => this.setState({ menu: false }),
+      g_usMin: mob ? '0px' : '100svh',
+      g_usPad: mob ? 'clamp(72px,9.4vw,120px) 0' : '0',
+      g_usPos: mob ? 'static' : 'sticky',
+      g_usH: mob ? 'auto' : '100svh',
+      g_usW: mob ? 'auto' : 'max-content',
+      g_usOvf: mob ? 'auto' : 'visible',
+      g_usSnap: mob ? 'x mandatory' : 'none',
+      g_usWill: mob ? 'auto' : 'transform',
+      g_usCard: mob ? '78vw' : 'min(clamp(240px,24vw,300px),calc((100svh - 330px) * .714))',
       g_btnFlex: mob ? '1 1 100%' : '0 0 auto',
       g_rvFs: mob ? '24px' : 'clamp(28px,3.4vw,46px)',
       g_rvMin: mob ? '6.25em' : '3.75em',
