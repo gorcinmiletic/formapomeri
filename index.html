@@ -204,7 +204,7 @@
 <div ref="{{ s3_trackRef }}" style="display:flex;gap:clamp(24px,2.4vw,32px);width:{{ g_usW }};overflow-x:{{ g_usOvf }};scroll-snap-type:{{ g_usSnap }};scroll-padding-left:max(clamp(20px,5.6vw,72px),calc((100% - 1296px)/2));scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:0 max(clamp(20px,5.6vw,72px),calc((100% - 1296px)/2));will-change:{{ g_usWill }}">
 <sc-for list="{{ s3_services }}" as="s" hint-placeholder-count="6">
 <div style="flex:none;scroll-snap-align:start;width:{{ g_usCard }}">
-<img src="{{ s.img }}" srcset="{{ s.srcset }}" sizes="(max-width: 759px) 78vw, 300px" width="800" height="1000" alt="{{ s.name }}" loading="lazy" decoding="async" style="display:block;width:100%;aspect-ratio:5/7;object-fit:cover;background:#2A4A43">
+<img src="{{ s.img }}" srcset="{{ s.srcset }}" sizes="(max-width: 759px) 78vw, 300px" width="800" height="1000" alt="{{ s.name }}" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;aspect-ratio:5/7;object-fit:cover;background:#2A4A43">
 <h3 style="margin:18px 0 0;font-size:19px;font-weight:400;line-height:1.35;color:#F6F1E8">{{ s.name }}</h3>
 </div>
 </sc-for>
@@ -569,7 +569,7 @@ class Component extends DCLogic {
     });
     const els = [];
     const ease = 'cubic-bezier(.22,.61,.36,1)';
-    groups.forEach(kids => kids.forEach((el, i) => { const d = (i * 0.12) + 's'; el.style.opacity = '0'; if (el.style.willChange !== 'transform') el.style.transform = 'translateY(32px)'; el.style.transition = 'opacity .9s ' + ease + ' ' + d + ', transform .9s ' + ease + ' ' + d; els.push(el); }));
+    groups.forEach(kids => kids.forEach((el, i) => { const d = (i * 0.12) + 's', pinned = el.style.willChange === 'transform'; el.style.opacity = '0'; if (!pinned) el.style.transform = 'translateY(32px)'; el.style.transition = pinned ? 'opacity .9s ' + ease + ' ' + d : 'opacity .9s ' + ease + ' ' + d + ', transform .9s ' + ease + ' ' + d; els.push(el); }));
     this._io = new IntersectionObserver(entries => entries.forEach(e => {
       if (!e.isIntersecting) return;
       e.target.style.opacity = '1'; if (e.target.style.willChange !== 'transform') e.target.style.transform = 'none'; this._io.unobserve(e.target);
